@@ -1,25 +1,42 @@
-# kanagawa-login-rs
+<p align="center">
+<h1 align="center">kanagawa-login-rs</h1>
+</p>
 
-A very simple but reactive login page based on the [kanagawa.nvim](https://github.com/rebelot/kanagawa.nvim) theme, built with Rust on the blazingly-fast Leptos framework.
+<p align="center">A very simple but reactive login page based on the built with Rust on the blazingly-fast Leptos framework.
+</p>
+
+<p align="center">Colorscheme based on <a href="https://github.com/rebelot/kanagawa.nvim">kanagawa.nvim</a>.</p>
 
 ## Run
 
 Install the Rust Nightly toolchain with `rustup`:
 
-`rustup toolchain install nightly`
+```bash
+rustup toolchain install nightly
+```
 
 Add `wasm` to your build targets:
 
-`rustup target add wasm32-unknown-unknown`
+```bash
+rustup target add wasm32-unknown-unknown
+```
 
 Ensure that `trunk` and `cargo-leptos` is installed:
 
-`cargo install --locked trunk` (use the `--locked` flag to ensure no errors)
+```bash
+cargo install --locked trunk
+```
 
-`cargo install cargo-leptos`
+(use the `--locked` flag to ensure no errors)
+
+```bash
+cargo install cargo-leptos
+```
 
 Clone the repository, `cd` into the directory, then run:
 
-`cargo leptos watch`
+```bash
+cargo leptos watch
+```
 
 Enjoy nerd
