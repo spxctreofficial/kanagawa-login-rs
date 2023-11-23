@@ -1,0 +1,107 @@
+@mixin border {
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #E6C384;
+}
+
+@mixin centered-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin reactive {
+    transition: 0.2s cubic-bezier(.77, 0, .18, 1);
+    scale: 1.0;
+    transform: translateY(0px);
+
+    &:hover, &:focus {
+        border-color: #7FB4CA;
+        transform: translateY(-2px);
+    }
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    background-color: #1F1F28;
+    @include centered-flex;
+}
+
+#screen {
+    width: 95%;
+    height: 95%;
+    @include centered-flex;
+}
+
+.form-submit-panel {
+    padding: 100px 50px 0px 50px;
+    background-color: #2A2A37;
+
+    @include centered-flex;
+    flex-direction: column;
+
+    @include border;
+}
+
+.input-login-section {
+    @include centered-flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.div-login {
+    width: fit-content;
+    gap: 1rem;
+
+    @include centered-flex;
+}
+
+.label-login {
+    color: #DCD7BA;
+    font-family: monospace, sans-serif !important;
+    font-size: large;
+}
+
+
+.input-login {
+    background-color: #2A2A37;
+    color: #DCD7BA;
+
+    font-family: monospace, sans-serif !important;
+    font-size: large;
+    padding: 5px 12px 5px 12px;
+
+    width: 210px;
+
+    @include border;
+    outline: none;
+
+    @include reactive;
+    &:focus {
+        border-color: #7FB4CA;
+        scale: 1.03;
+    }
+}
+
+.form-submit-region {
+    @include centered-flex;
+
+    padding: 40px 30px 40px 30px;
+}
+
+.form-submit-btn {
+    background-color: #2A2A37;
+    color: #DCD7BA;
+
+    font-family: monospace, sans-serif !important;
+    font-size: large;
+    font-weight: 500;
+    padding: 5px 8px 5px 8px;
+
+    @include border;
+    outline: none;
+
+    @include reactive;
+}
