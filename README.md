@@ -1,6 +1,6 @@
 # kanagawa-login-rs
 
-A very simple but reactive login page built with Rust on the blazingly-fast Leptos framework.
+A very simple but reactive login page based on the [kanagawa.nvim](https://github.com/rebelot/kanagawa.nvim) theme, built with Rust on the blazingly-fast Leptos framework.
 
 ## Run
 

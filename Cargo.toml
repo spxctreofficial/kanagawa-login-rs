@@ -1,5 +1,5 @@
 [package]
-name = "login-rs"
+name = "kanagawa-login-rs"
 version = "0.1.0"
 edition = "2021"
 
